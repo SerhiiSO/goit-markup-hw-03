@@ -1,12 +1,30 @@
 :root {
-  --primary-font: 'Roboto', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   --primary-font-color: #757575;
   --secondary-font-color: #212121;
   --logo-accent-color: #2196f3;
   --logo-second-color: #000000;
   --logo-footer-color: #ffffff;
   --link-hover-focus: #2196f3;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
 }
 body {
   font-family: var(--primary-font);
@@ -15,8 +33,22 @@ body {
 }
 /*------------HEAD------------*/
 .header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
 }
 .header-nav {
+  display: flex;
+  align-items: center;
 }
 
 .logo-header {
@@ -27,6 +59,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--logo-second-color);
   text-decoration: none;
+  margin-right: 93px;
+  margin-left: 0;
 }
 
 .logo-part {
@@ -35,14 +69,19 @@ body {
 
 .nav-list {
   list-style: none;
+  display: flex;
+  align-items: center;
 }
-.menu-link {
+.menu-link:not(:last-child) {
+  margin-right: 50px;
+}
+.link {
   text-decoration: none;
   color: var(--secondary-font-color);
   font-weight: 500;
   line-height: 1.14;
 }
-.menu-link.current {
+.link.current {
   color: #2196f3;
 }
 .menu-link:focus,
@@ -51,14 +90,21 @@ body {
 }
 .contacts {
   list-style: none;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
-.header-contacts {
+.header-contacts:not(:first-child) {
+  margin-left: 50px;
+}
+.mail-tel {
   text-decoration: none;
   color: #757575;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .header-contacts:focus,
 .header-contacts:hover {
   color: var(--link-hover-focus);
@@ -67,8 +113,19 @@ body {
 /*----------HEAD----------*/
 
 /*=============HERO=============*/
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .hero {
   background-color: #2f303a;
+  height: 600px;
+  text-align: center;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 .hero-main-sec {
   font-size: 44px;
@@ -77,6 +134,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06;
   text-transform: uppercase;
+  width: 693px;
 }
 .modal-btn {
   background-color: #2196f3;
@@ -86,6 +144,11 @@ body {
   font-weight: 700;
   line-height: 1.88;
   cursor: pointer;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
 }
 .advantages {
 }
