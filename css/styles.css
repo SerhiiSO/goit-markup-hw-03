@@ -48,6 +48,7 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid;
 }
 
 .header-container {
@@ -172,13 +173,13 @@ body {
   list-style: none;
   display: flex;
 }
-.adv-list-part:not(:last-child) {
+.plus-list-part:not(:last-child) {
   margin-right: 30px;
 }
-.adv-list-part {
+.plus-list-part {
   width: 270px;
 }
-.adv-list-head {
+.plus-list-head {
   font-weight: 700;
   line-height: 1.14;
   color: #212121;
@@ -186,7 +187,7 @@ body {
   text-transform: uppercase;
 }
 
-.adv-list-inform {
+.plus-list-inform {
   line-height: 1.7;
   color: var(--primary-font-color);
   letter-spacing: 0.03em;
@@ -340,7 +341,13 @@ body {
   border: 1px solid #eeeeee;
   border-top: none;
 }
+.example-name {
+  font-size: 18px;
+  line-height: 2;
+}
 .example-type {
+  font-size: 16px;
   margin-top: 4px;
+  line-height: 1.87;
   color: var(--primary-font-color);
 }
